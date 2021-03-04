@@ -1,0 +1,29 @@
+import React, { useState, useEffect } from "react";
+import useInputs from "./useInput";
+
+const Info = () => {
+  const [state, dispatch] = useInputs({
+    name: "",
+    nickname: "",
+  });
+  const { name, nickname } = state;
+
+  return (
+    <div>
+      <div>
+        <input name="name" value={name} onChange={onChange} />
+        <input name="nickname" value={nickname} onChange={onChange} />
+      </div>
+      <div>
+        <b>이름:</b>
+        {name}
+      </div>
+      <div>
+        <b>별명:</b>
+        {nickname}
+      </div>
+    </div>
+  );
+};
+
+export default Info;
