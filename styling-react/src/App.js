@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import SassComponent from "./SassComponent";
+import StyledComponent from "./StyledComponent";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       </header>
     </div>*/
     <div>
-      <SassComponent />
+      <StyledComponent />
     </div>
   );
 }
